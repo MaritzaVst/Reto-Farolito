@@ -4,9 +4,11 @@
 }
 .text-red{
 	color: #FF6A49;
+	font-family:"Lato-Bold";
 }
 .text-skyblue{
 	color: #58C6E7;
+	font-weight:bold;
 }
 .text-gray{
 	color: #9E9D9D;
@@ -20,16 +22,29 @@
 .ptp-35{
 	padding-top:35%;
 }
-.title-subtitle{
-	font-family: "NeutraText-DemiAlt";
-}
 ptp-5{
 	padding-top: 5%
 }
+.family-latobold{
+	font-family:"Lato-Bold";
+}
 .button{
 	padding: 1% 5%;
-	border-radius:15px;
+	border-radius:10px;
 }
 .button-red{
 	background-color: #FF6A49;
+	color: #fff;
+	&:hover{
+		background-color:#ff4016;
+		border-color: #f12c00;
+	}
+}
+button{
+	border: transparent;
+	font-weight: bold;
+}
+.scroll{
+	position: relative;
+	text-align: center;
 }
