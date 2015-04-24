@@ -112,6 +112,7 @@ body{
 		height: 410px;
 		figure{
 			position: absolute;
+			width: 100%;
 			img{width: 100%;}
 		}
 		div{
@@ -237,6 +238,7 @@ body{
 			}
 		}
 	}
+	
 	@media screen and(max-width: #{$screen-phone}){
 		padding: 8% 0;
 		.row {

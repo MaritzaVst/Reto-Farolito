@@ -624,6 +624,9 @@ body{
 		  	margin-top: 35px;
 		}
 	}
+	.scroll{
+		top: 240px;
+	}
 }
 #blog{
 	padding: 5% 15%;
@@ -636,8 +639,8 @@ body{
 				a{
 					text-decoration: none;
 					div{
-					background-color: #eeeeee;
-					transition: all 0.2s ease-in-out;
+						background-color: #eeeeee;
+						transition: all 0.2s ease-in-out;
 						padding: 0 12% 8% 13%;
 						figure{
 							position: relative;
@@ -648,7 +651,7 @@ body{
 						}
 						&:hover{
 							background-color: #FFC819;
-							color:white;
+							color:white; 
 						}
 					}
 				}
@@ -656,6 +659,30 @@ body{
 		}
 		button{
 			background-color: #58C6E7;
+		  	font-size: 20px;
+		  	padding: 12px 50px;
+		  	border-radius: 15px;
+		}
+	}
+	.scroll{
+		top: 100px;
+	}
+	@media screen and(max-width: #{$screen-phone}){
+		padding-bottom:15%;
+		.text-center .row{
+			padding-top:20%; 
+			.col-md-4{
+				a{ 
+					div{
+						background-color:transparent;
+						padding-bottom:15%;
+						h4{
+							line-height: 1.5;
+							text-align: center;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -669,6 +696,29 @@ body{
 			margin-bottom: 8%;
 			padding-left: 5%;
 		}
+		textarea{
+  			height: 20%;
+  		}
+  		button{
+  			padding: 5% 40%;
+				border-radius: 15px;
+				margin:10% 0;
+				background-color:#9E9D9D;
+  		}
+	}
+	@media screen and(max-width: #{$screen-phone}){
+	  	padding: 10% 15% 15%;
+	  	.text-center .row .col-md-6{
+	  		textarea{
+	  			height: 20%;
+	  		}
+	  		button{
+	  			padding: 5% 40%;
+  				border-radius: 15px;
+  				margin:10% 0;
+  				background-color:#9E9D9D;
+	  		}
+	  	}
 	}
 }
 #footer{

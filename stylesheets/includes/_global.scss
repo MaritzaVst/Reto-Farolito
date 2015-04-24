@@ -149,9 +149,13 @@
 		  			border:none;
 		  		}
 	  		}
-		}
-		ul li:hover{
-		  background: #FF6A49;
+	  		li:hover{
+			  	background: #FF6A49;
+			  	a:active{
+			  	text-decoration: none;
+			  	color: #fff;
+				}
+			}
 		}
 	}
 	.container-toggle{
