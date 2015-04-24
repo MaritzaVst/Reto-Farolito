@@ -9,23 +9,79 @@
 	</head>
 	<body>
 		<div class="contenedor">
+			<div id="slider-left" class="text-center">
+				<div class="container-toggle">
+					<button id="toggle-menu-mobil" type="button" class="btn btn-default text-gray" aria-label="Left Justify">
+					  	<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+					</button>
+				</div>
+				<nav>
+					<ul>
+						<li><a class="text-white" href="index.html">Home</a></li>
+						<li><a class="text-white" href="nosotros.html">Sobre nosotros</a></li>
+						<li><a class="text-white" href="ingreso.html">Ingresa a tu cuenta</a></li>
+						<li><a class="text-white" href="crear-cuenta.html">Crear cuenta</a></li>
+						<li><a class="text-white" href="">Blog</a></li>
+						<li><a class="text-white" href="">Contáctanos</a></li>
+					</ul> 
+				</nav>
+			</div>
 			<header>
-				<div class="container-fluid">
+				<div class="container-fluid menu">
 					<nav class="fixed-to-top">
-						<ul class="hidden-xs">
-							<li><a href="" class="text-gray">Sobre nosotros</a></li>
-							<li><a href="" class="text-gray">Oportunidades</a></li>
-							<li><button>INGRESAR</button></li>
-						</ul>				
+					<!--Menu-movil-->	
+					    <button type="button" class="btn btn-default toggle-menu text-gray" aria-label="Left Justify">
+						  	<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+						</button>
+					    <a class="farolito hidden-lg hidden-md hidden-sm" href="index.html"><img src="img/iconos/logo-farolito.png" alt=""></a>
+					    <a href="crear-cuenta.html"><button id="perfil" class="hidden-lg hidden-md hidden-sm text-white">CREA TU PERFIL</button></a> 
+					<!--Menù-desktop-->
+						<figure><a href="index.html" class="hidden-xs"><img src="img/iconos/logo-farolito.png" alt=""></a></figure>
+						<ul class="hidden-xs menu-desktop">
+							<li><a href="nosotros.html" class="text-gray">Sobre nosotros</a></li>
+							<li><a href="#oportunidades" class="text-gray smooth">Oportunidades</a></li>
+							<li>
+								<div class="dropdown">
+								  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    ES
+								    	<span class="glyphicon glyphicon-menu-down"></span>
+								 	</button>
+								  	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inglés</a></li>
+								    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Francés</a></li>
+								  	</ul>
+								</div>
+							</li>
+							<li><button id="ingresar">INGRESAR</button></li>
+						</ul>			
 					</nav>
 				</div>
 			</header>
+			<div id="overlay">
+				<div class="popup">
+				    <a class="close" href=""><span class="glyphicon glyphicon-remove"></span></a>
+					<h1 class="text-skyblue family-latobold">Ingresa a tu cuenta</h1>
+					<form action="#" method="post">
+						<p>
+							<input id="username" name="username" type="text" placeholder="Usuario">
+						</p>
+						<p>
+							<input id="password" name="password" type="password" placeholder="Password">
+						</p>
+						<p>
+							<input type="submit" value="INGRESAR" id="submit">
+						</p>
+					</form>
+					<p><a class="text-gray" href="">¿Olvidaste tu contraseña?</a></p>
+					<p><a class="text-gray" href="">¿No estás registrado? Crea tu cuenta aquí.</a></p>
+				</div>
+			</div>
 			<section id="view-principal">
 				<div class="row">
 					<div class="col-md-6">
 					</div>
 					<div class="col-md-6 text-center">
-						<figure><img src="img/iconos/iconos-20.png" alt="Farolito"></figure>
+						<figure><img src="img/iconos/logo-slogan.png" alt="Farolito"></figure>
 						<!--<figure><img src="img/iconos/logo-slogan.png" class="hidden-lg hidden-md hidden-sm" alt="Farolito"></figure>-->
 						<h3 class="text-skyblue">Identificamos al mejor talento y maximizamos su potencial</h3>
 						<h4 class="text-gray">Con una evaluación rigurosa, <span class="hidden-xs">tanto de postulantes como de puestos laborales,</span> identificamos la sinergia óptima entre trabajador y empresa, aumentando la productividad, la permanencia y la felicidad de los trabajadores</h4>
@@ -35,7 +91,7 @@
 				<figure id="img-movil" class="hidden-md hidden-sd hidden-lg">
 					<img src="img/foto-landing-09.png" alt="">
 				</figure>
-				<div class="scroll hidde-xs">
+				<div class="scroll hidden-xs">
 					<a href="#metodologia" class="smooth"><img src="img/iconos/arrow_down.png" alt=""></a>
 				</div>
 			</section>
@@ -55,7 +111,12 @@
 										<h4 class="text-white">Obtenemos el perfil profesional del postulante mediante un análisis completo que identifica <br> el mejor talento para <br> cualquier puesto. <br>
 										Nos basamos en 3 pilares:</h4>
 									</div>
-									<div class="circle-text-hover"></div>
+									<div class="circle-text-hover hidden">
+										<h3>"El corazón de <br>nuestra metodología es <br>nuestro propio examen"</h3>
+										<div class="absolute">
+											<img src="img/iconos/iconos-19.png" alt="">
+										</div>	
+									</div>
 								</div>
 							</div>
 							<div class="row hidden-xs">
@@ -154,7 +215,7 @@
 					</div>
 					<button class="hidden-xs">VER OPORTUNIDADES</button>
 				</div>
-				<div class="scroll hidde-xs">
+				<div class="scroll hidden-xs">
 					<a href="#empresas" class="smooth"><img src="img/iconos/arrow_down.png" alt=""></a>
 				</div>
 			</section>
@@ -188,7 +249,7 @@
 					</div>
 					<button class="text-white button button-red">CONTÁCTANOS</button>
 				</div>
-				<div class="scroll hidde-xs">
+				<div class="scroll hidden-xs">
 					<a href="#centros-educativos" class="smooth"><img src="img/iconos/arrow_down.png" alt=""></a>
 				</div>
 			</section>
@@ -202,7 +263,7 @@
 						</div>
 						<div class="col-md-3"></div>
 					</div>
-					<h4>Somos la evaluadora que asegura que cada alumno egrese siendo el mejor profesional que requiere el mercado laboral.</h4>
+					<h4 class="hidden-xs">Somos la evaluadora que asegura que cada alumno egrese siendo el mejor profesional que requiere el mercado laboral.</h4>
 					<div class="row texto">
 						<div class="col-md-4">
 							<figure><img src="img/iconos/iconos-03.png" alt=""></figure>
@@ -221,7 +282,7 @@
 						</div>
 					</div>
 					<button class="text-white button">CONTÁCTANOS</button>
-					<div class="scroll hidde-xs">
+					<div class="scroll hidden-xs">
 						<a href="#oportunidades" class="smooth"><img src="img/iconos/arrow_down.png" alt=""></a>
 					</div>
 			</section>
@@ -238,7 +299,7 @@
 							<p>Horario:: 8:00 am - 6pm</p>
 						</div>
 						<div class="col-md-12 text-right">
-							<button class="button-red text-white">VER MÁS</button>
+							<button class="text-bold text-red">VER MÁS</button>
 						</div>
 					</div>
 					<div class="row">
@@ -251,7 +312,7 @@
 							<p>Horario:: 8:00 am - 6pm</p>
 						</div>
 						<div class="col-md-12 text-right">
-							<button class="button-red text-white">VER MÁS</button>
+							<button class="text-bold text-red">VER MÁS</button>
 						</div>
 					</div>
 					<div class="row">
@@ -264,10 +325,10 @@
 							<p>Horario:: 8:00 am - 6pm</p>
 						</div>
 						<div class="col-md-12 text-right">
-							<button class="button-red text-white">VER MÁS</button>
+							<button class="text-bold text-red">VER MÁS</button>
 						</div>
 					</div>
-					<button>VER TODOS</button>
+					<button class="ver-todos text-bold text-white">VER TODOS</button>
 				</div>
 			</section>
 			<section id="blog">
@@ -320,14 +381,15 @@
 			</section>
 			<section id="footer">
 				<ul class="iconos-left">
-					<li><img src="img/iconos/iconos-12.png" alt=""></li>
-					<li><img src="img/iconos/iconos-13.png" alt=""></li>
-					<li><img src="img/iconos/iconos-14.png" alt=""></li>
+					<li class="col-md-4"><img src="img/iconos/iconos-12.png" alt=""></li>
+					<li class="col-md-4"><img src="img/iconos/iconos-13.png" alt=""></li>
+					<li class="col-md-4"><img src="img/iconos/iconos-14.png" alt=""></li>
 				</ul>
 				<p>Todos los derechos son reservados</p>
 			</section>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<!-- Javascripts de Bootstrap -->
 		<script src="javascripts/b3/collapse.js"></script>
 		<script src="javascripts/b3/transition.js"></script>

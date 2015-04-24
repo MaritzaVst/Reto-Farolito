@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>	
+	<head>
+		<title>Farolito</title>
+		<meta charset="utf-8">
+		<!-- Responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	</head>
+	<body>
+		<div class="contenedor">
+			<header>
+				<div class="container-fluid menu">
+					<nav class="fixed-to-top">
+					<!--Menu-movil-->	
+						<ul class="toggle-menu hidden-lg hidden-md hidden-sm">
+					      	<li class="toggle">
+					        	<span class="toggle-menu-bar"></span>
+					        	<span class="toggle-menu-bar"></span>
+					        	<span class="toggle-menu-bar"></span>
+					      	</li>
+					    </ul>
+					    <a class="farolito hidden-lg hidden-md hidden-sm" href="index.html"><img src="img/iconos/logo-farolito.png" alt=""></a>
+					    <a href="crear-cuenta.html"><button id="perfil" class="hidden-lg hidden-md hidden-sm text-white">CREA TU PERFIL</button></a> 
+					<!--Menù-desktop-->
+						<figure><a href="index.html" class="hidden-xs"><img src="img/iconos/logo-farolito.png" alt=""></a></figure>
+						<ul class="hidden-xs menu-desktop">
+							<li><a href="nosotros.html" class="text-gray">Sobre nosotros</a></li>
+							<li><a href="#oportunidades" class="text-gray smooth">Oportunidades</a></li>
+							<li>
+								<div class="dropdown">
+								  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    ES
+								    	<span class="glyphicon glyphicon-menu-down"></span>
+								 	</button>
+								  	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inglés</a></li>
+								    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Francés</a></li>
+								  	</ul>
+								</div>
+							</li>
+							<li><button id="ingresar">INGRESAR</button></li>
+						</ul>			
+					</nav>
+				</div>
+			</header>
+			<div id="articulo">
+				<div class="row">
+					<div class="col-md-8 col-xs-12">
+						<span class="text-gray text-bold">Publicado el 2013-10-16</span>
+						<h2 class="text-skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+						<ul class="autor clearfix">
+							<li><img src="img/iconos/user-male.png" alt=""></li>
+							<li>
+								<p class="text-skyblue">Lorem ipsum</p>
+								<p>Gerente General</p>
+							</li>
+						</ul>
+						<p class="text-gray">En Farolito, nos esforzamos para que miembros de la comunidad Farolito consigan el trabajo de sus sueños. Revisamos currículums, damos consejos después de entrevistas sobre como impresionar aún más a la empresa indicada, y a la gente que haya entrado a un puesto a través de Farolito, la llamamos de ve en cuando para ver cómo van y cómo podemos seguir ayudándolos.</p>
+						<p class="text-gray">En la actualidad, la Comunidad Farolito supera a casi 3,000 personas. Ahora, es más difícil llegar a todos, y en particular, a personas que aún siguen busvcando trabajo pero sueñan con algo mejor, nos en cantaría ayudarles acada uno de ustedes tanto como se pueda.</p>
+						<figure><img src="img/entrevista.jpg" alt=""></figure>
+						<p class="text-gray">Por ello, hemos creado un blog especialmente diseñado para ustedes, en el cual encontrarán información sobre temas laborales y cómo superar los retos que se presentan día a día en este mundo laboral tan competitivo. Por ejemplo, cómo preparase y presentarse a una entrevista, si tienen preguntas sobre el AFP, o si quieren impresionar a su nuevo jefe el primer día de trabajo- estamos aquí.</p>
+						<p class="text-gray">Espero que les guste la informaicón que se presneta aquí. Por favor, escíbenos, ponga sus comentarios, visite nuestro sitio de Facebook y únase a la Comunidad Farolito. Estamos aquí para ayudar.</p>
+						<p class="text-gray">¡Los esperamos!</p>
+					</div>
+					<div class="col-md-4 hidden-xs">
+						<div class="fixed">
+							<div class="categoria">
+								<h4 class="text-yellow text-bold">Artículos</h4>
+								<div class="box">
+									<ul>
+										<li><a href="">Aprendizaje</a></li>
+										<li><a href="">Avisos</a></li>
+										<li><a href="">General</a></li>
+										<li><a href="">Tips & Tricks</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="categoria">
+								<h4 class="text-yellow text-bold">Últimos artículos</h4>
+								<div class="text-gray box">
+									<figure class="text-center"><img src="img/iconos/user-male.png" alt=""></figure>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								</div>
+								<div class="text-gray box">
+									<figure class="text-center"><img src="img/iconos/user-male.png" alt=""></figure>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section id="footer">
+				<ul class="iconos-left">
+					<li class="col-md-4"><img src="img/iconos/iconos-12.png" alt=""></li>
+					<li class="col-md-4"><img src="img/iconos/iconos-13.png" alt=""></li>
+					<li class="col-md-4"><img src="img/iconos/iconos-14.png" alt=""></li>
+				</ul>
+				<p>Todos los derechos son reservados</p>
+			</section>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- Javascripts de Bootstrap -->
+		<script src="javascripts/b3/collapse.js"></script>
+		<script src="javascripts/b3/transition.js"></script>
+		<script src="javascripts/scroll.js"></script>
+	</body>	
+</html>	
